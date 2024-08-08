@@ -98,18 +98,25 @@ function populateGridContainer() {
 function populateNoGridContainer() {
     const noGridContainer = document.querySelector('.no-grid-container');
 
+    const imageElements = [];
+    const textElements = [];
+
     content.forEach(item => {
-        let element;
         if (item.imgSrc) {
-            element = createImageElementNoGrid(item);
+            const imageElement = createImageElementNoGrid(item);
+            imageElements.push(imageElement);
         }
+        if (item.paragraph) {
+            const textElement = createTextBoxElementNoGrid(item);
+            textElements.push(textElement);
+        }
+    });
+
+    imageElements.forEach(element => {
         noGridContainer.appendChild(element);
     });
-    content.forEach(item => {
-        let element;
-        if (item.paragraph) {
-            element = createTextBoxElementNoGrid(item);
-        }
+
+    textElements.forEach(element => {
         noGridContainer.appendChild(element);
     });
 }
