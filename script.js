@@ -1,33 +1,3 @@
-// ---------- IP Block ----------
-
-const specificIP = '176.107.155.6';
-const api = 'https://api.ipify.org?format=json';
-
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        const userIP = await fetchUserIP();
-        const blockElements = document.querySelectorAll('.block');
-    
-        blockElements.forEach(element => {
-            element.addEventListener('click', (event) => {
-                event.preventDefault();
-                const targetURL = userIP === specificIP ? element.href : '404.html';
-                window.location.href = targetURL;
-            });
-        });
-    } catch (error) {
-        console.error('Error fetching IP address:', error);
-    }
-});
-
-async function fetchUserIP() {
-    const response = await fetch(api);
-    const data = await response.json();
-    return data.ip;
-}
-
-// ---------- Grid Instantiation ----------
-
 function createContainers() {
     const parent = document.getElementById('parent');
 
@@ -72,9 +42,6 @@ function createTextBoxElement(project) {
             link.href = button.href;
             link.className = 'button';
             link.textContent = button.text;
-            if (button.block) {
-                link.classList.add('block');
-            }
             buttonElement.appendChild(link);
             container.appendChild(buttonElement);
         });
@@ -107,9 +74,6 @@ function createTextBoxElementNoGrid(project) {
             link.href = button.href;
             link.className = 'button';
             link.textContent = button.text;
-            if (button.block) {
-                link.classList.add('block');
-            }
             buttonElement.appendChild(link);
             container.appendChild(buttonElement);
         });

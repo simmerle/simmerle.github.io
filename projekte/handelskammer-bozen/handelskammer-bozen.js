@@ -40,6 +40,12 @@ const content = [
         imgSrc: 'reduziert/6.webp',
         alt: '→ 6',
         gridStyle: 'grid-column: span 6; grid-row: span 3;'
+    },
+    {
+        href: 'original/7.jpg',
+        imgSrc: 'reduziert/7.webp',
+        alt: '→ 7',
+        gridStyle: 'grid-column: span 6; grid-row: span 4;'
     }
 ];
 

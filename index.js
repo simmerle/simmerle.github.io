@@ -12,15 +12,15 @@ const content = [
         gridStyle: 'grid-column: span 4; grid-row: span 3;'
     },
     {
-        href: 'projekte/handelskammer-bozen/handelskammer-bozen.html',
-        imgSrc: 'projekte/handelskammer-bozen/reduziert/1.webp',
-        alt: '→ Handelskammer Bozen',
+        href: 'projekte/noi-techpark-suedtirol/noi-techpark-suedtirol.html',
+        imgSrc: 'projekte/noi-techpark-suedtirol/reduziert/0.webp',
+        alt: '→ NOI Techpark Südtirol',
         gridStyle: 'grid-column: span 2; grid-row: span 2;'
     },
     {
-        href: 'projekte/noi-techpark-suedtirol/noi-techpark-suedtirol.html',
-        imgSrc: 'projekte/noi-techpark-suedtirol/reduziert/1.webp',
-        alt: '→ NOI Techpark Südtirol',
+        href: 'projekte/handelskammer-bozen/handelskammer-bozen.html',
+        imgSrc: 'projekte/handelskammer-bozen/reduziert/5.webp',
+        alt: '→ Handelskammer Bozen',
         gridStyle: 'grid-column: span 3; grid-row: span 2;'
     },
     {
@@ -36,17 +36,14 @@ const content = [
             {
                 text: '→ Zugriff',
                 href: 'http://192.168.178.2:7000',
-                block: true
             },
             {
                 text: '→ URL Kürzer',
                 href: 'werkzeuge/',
-                block: true
             },
             {
                 text: '→ Password Generator',
                 href: 'werkzeuge/',
-                block: true
             }
         ]
     },
@@ -57,12 +54,10 @@ const content = [
             {
                 text: '→ Preise',
                 href: 'informationen/preise.html',
-                block: false
             },
             {
                 text: '→ weitere Projekte',
                 href: 'informationen/weitere-projekte.html',
-                block: false
             }
         ]
     },

@@ -1,5 +1,10 @@
 Todo:
 
- • URL shortener front end, password generator
+ Tools:
+   • URL shortener front end
+   • Password generator
+   • Games
  • Smaller images
  • Consistent naming
+ • IP Blocker
+ • Kulturzentrum Bilder fixen
