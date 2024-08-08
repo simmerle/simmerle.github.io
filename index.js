@@ -21,7 +21,7 @@ const content = [
         href: 'projekte/noi-techpark-suedtirol/noi-techpark-suedtirol.html',
         imgSrc: 'projekte/noi-techpark-suedtirol/reduziert/1.webp',
         alt: '→ NOI Techpark Südtirol',
-        gridStyle: 'grid-column: span 4; grid-row: span 2;'
+        gridStyle: 'grid-column: span 3; grid-row: span 2;'
     },
     {
         href: 'projekte/happacherhof-auer/happacherhof-auer.html',
@@ -30,8 +30,26 @@ const content = [
         gridStyle: 'grid-column: span 2; grid-row: span 2;'
     },
     {
+        paragraph: 'WERKZEUGE',
+        gridStyle: 'grid-column: span 1; grid-row: span 2;',
+        buttons: [
+            {
+                text: '→ Zugriff',
+                href: 'http://192.168.178.2:7000'
+            },
+            {
+                text: '→ URL Kürzer',
+                href: 'werkzeuge/'
+            },
+            {
+                text: '→ Password Generator',
+                href: 'werkzeuge/'
+            }
+        ]
+    },
+    {
         paragraph: 'INFORMATIONEN',
-        gridStyle: 'grid-column: span 1; grid-row: span 1;',
+        gridStyle: 'grid-column: span 2; grid-row: span 1;',
         buttons: [
             {
                 text: '→ Preise',
@@ -40,20 +58,6 @@ const content = [
             {
                 text: '→ weitere Projekte',
                 href: 'informationen/weitere-projekte.html'
-            }
-        ]
-    },
-    {
-        paragraph: 'WERKZEUGE',
-        gridStyle: 'grid-column: span 1; grid-row: span 1;',
-        buttons: [
-            {
-                text: '→ Freigabe',
-                href: 'http://192.168.178.2:7000'
-            },
-            {
-                text: '→ URL Kürzer',
-                href: ''
             }
         ]
     },

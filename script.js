@@ -20,6 +20,8 @@ function createImageElement(project) {
     const img = document.createElement('img');
     img.src = project.imgSrc;
     img.alt = project.alt;
+    img.classList.add('bw-image');
+    img.loading = 'lazy';
 
     anchor.appendChild(img);
     return anchor;
