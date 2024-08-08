@@ -35,15 +35,18 @@ const content = [
         buttons: [
             {
                 text: '→ Zugriff',
-                href: 'http://192.168.178.2:7000'
+                href: 'http://192.168.178.2:7000',
+                block: true
             },
             {
                 text: '→ URL Kürzer',
-                href: 'werkzeuge/'
+                href: 'werkzeuge/',
+                block: true
             },
             {
                 text: '→ Password Generator',
-                href: 'werkzeuge/'
+                href: 'werkzeuge/',
+                block: true
             }
         ]
     },
@@ -53,11 +56,13 @@ const content = [
         buttons: [
             {
                 text: '→ Preise',
-                href: 'informationen/preise.html'
+                href: 'informationen/preise.html',
+                block: false
             },
             {
                 text: '→ weitere Projekte',
-                href: 'informationen/weitere-projekte.html'
+                href: 'informationen/weitere-projekte.html',
+                block: false
             }
         ]
     },
@@ -77,6 +82,5 @@ const content = [
 
 document.addEventListener('DOMContentLoaded', () => {
     const { gridContainer, noGridContainer } = createContainers();
-    populateGridContainer(gridContainer);
-    populateNoGridContainer(noGridContainer);
+    populate(content, { gridContainer, noGridContainer });
 });

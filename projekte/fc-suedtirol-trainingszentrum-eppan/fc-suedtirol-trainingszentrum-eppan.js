@@ -69,6 +69,5 @@ const content = [
 
 document.addEventListener('DOMContentLoaded', () => {
     const { gridContainer, noGridContainer } = createContainers();
-    populateGridContainer(gridContainer);
-    populateNoGridContainer(noGridContainer);
+    populate(content, { gridContainer, noGridContainer });
 });
