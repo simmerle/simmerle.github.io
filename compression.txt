@@ -1,0 +1,1 @@
+magick mogrify -path ../reduziert -format webp -resize 1280x -define webp:quality=20 -define webp:lossless=false -strip *.jpg
